@@ -265,7 +265,7 @@ input[type="range"]::-webkit-slider-thumb, input[type="range"]::-moz-range-thumb
     }
     
     .messageRowDiv {
-        justify-content: center;
+       justify-content: flex-end;
     }
 /* Remove spacing on the right side (no avatar there) */
 .message.right .bubble {
@@ -274,5 +274,14 @@ input[type="range"]::-webkit-slider-thumb, input[type="range"]::-moz-range-thumb
 
 /* Also remove any padding pushing it inward */
 .message.right {
-  padding-right: 10px !important;
+  padding-right: 0 !important;
+}
+    /* RIGHT side (no avatar → no spacing) */
+.message.right {
+    margin-left: auto;
+    padding-right: 0 !important;
+}
+
+.message.right .bubble {
+    margin-right: 0 !important;
 }
