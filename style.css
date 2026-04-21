@@ -267,4 +267,12 @@ input[type="range"]::-webkit-slider-thumb, input[type="range"]::-moz-range-thumb
     .messageRowDiv {
         justify-content: center;
     }
+/* Remove spacing on the right side (no avatar there) */
+.message.right .bubble {
+  margin-right: 0 !important;
+}
+
+/* Also remove any padding pushing it inward */
+.message.right {
+  padding-right: 10px !important;
 }
